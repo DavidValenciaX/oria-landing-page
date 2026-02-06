@@ -29,6 +29,15 @@
     <!-- Fuente Inter (Limpia y técnica como Tesla) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Conthrax';
+            src: url('fonts/Conthrax-SemiBold.otf') format('opentype');
+        }
+
+        .font-conthrax {
+            font-family: 'Conthrax', sans-serif;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -51,7 +60,7 @@
             <!-- AQUÍ VA TU LOGO -->
             <!-- Reemplaza 'logo.png' con la ruta de tu imagen -->
             <img src="oria_logo.png" alt="Oria Logo" class="h-10 w-auto">
-            <span class="text-2xl font-bold tracking-widest text-white">ORIA</span>
+            <span class="text-2xl font-bold tracking-widest text-white font-conthrax">Oria</span>
         </div>
         <a href="#contacto"
             class="hidden md:block px-6 py-2 border border-oriaText/30 rounded-full hover:border-oriaNeon hover:text-oriaNeon transition-all text-sm font-semibold tracking-wide">
