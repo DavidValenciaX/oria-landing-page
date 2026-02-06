@@ -8,48 +8,10 @@
     <!-- Tailwind CSS (Framework de diseño moderno) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configuración de colores personalizados basados en tu marca -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        oriaBlack: '#0a0a0a',      // Fondo casi negro
-                        oriaDark: '#121212',       // Fondo secundario
-                        oriaGray: '#1f1f1f',       // Tarjetas
-                        oriaNeon: '#DFFF00',       // Amarillo Neón (Ajustado a tu logo)
-                        oriaText: '#e5e5e5',       // Blanco suave para texto
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="script.js"></script>
     <!-- Fuente Inter (Limpia y técnica como Tesla) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'Conthrax';
-            src: url('fonts/Conthrax-SemiBold.otf') format('opentype');
-        }
-
-        .font-conthrax {
-            font-family: 'Conthrax', sans-serif;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .glow-text {
-            text-shadow: 0 0 20px rgba(223, 255, 0, 0.3);
-        }
-
-        .gradient-bg {
-            background: radial-gradient(circle at top right, #1f1f1f 0%, #0a0a0a 60%);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-oriaBlack text-oriaText antialiased">
