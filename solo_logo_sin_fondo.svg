@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352.41 351.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #d5fd07;
+      }
+    </style>
+  </defs>
+  <g id="solo_logo">
+    <g id="parte_blanca">
+      <polygon class="cls-1" points="252.01 248.5 352.42 98.82 256.58 351.38 252.01 248.5"/>
+      <polygon class="cls-1" points="0 94.77 253.12 0 103.6 99.66 0 94.77"/>
+    </g>
+    <g id="parte_verde">
+      <polygon class="cls-2" points="245.37 106.73 178.54 115.44 352.42 0 236.46 173.53 245.37 106.73"/>
+      <path class="cls-2" d="M54.24,405.47,221.58,297.53l9.36-68.25-68.27,9.17Z" transform="translate(-54.24 -54.08)"/>
+    </g>
+  </g>
+</svg>
