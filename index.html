@@ -286,28 +286,36 @@
                 </div>
 
                 <!-- Formulario -->
-                <form class="space-y-4">
+                <!-- Formulario -->
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <!-- Web3Forms Config -->
+                    <input type="hidden" name="access_key" value="750f4706-72a8-429d-92db-85b8b98ee59a">
+                    <input type="hidden" name="subject" value="Nuevo Lead desde Oria Landing">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <div>
                         <label for="email-contacto" class="block text-xs uppercase tracking-wide text-gray-500 mb-2">Tu Correo
                             Electrónico</label>
-                        <input id="email-contacto" type="email" placeholder="ejemplo@startup.com"
+                        <input id="email-contacto" type="email" name="email" placeholder="ejemplo@startup.com" required
                             class="w-full bg-black border border-gray-700 text-white p-4 rounded focus:outline-none focus:border-oriaNeon focus:ring-1 focus:ring-oriaNeon transition-all">
                     </div>
                     <div>
                         <label for="tipo-consulta" class="block text-xs uppercase tracking-wide text-gray-500 mb-2">¿Qué tienes en
                             mente?</label>
-                        <select id="tipo-consulta"
+                        <select id="tipo-consulta" name="message"
                             class="w-full bg-black border border-gray-700 text-white p-4 rounded focus:outline-none focus:border-oriaNeon">
-                            <option>Necesito desarrollar un MVP</option>
-                            <option>Necesito escalar mi plataforma</option>
-                            <option>Necesito una App Móvil</option>
-                            <option>Solo quiero información</option>
+                            <option value="MVP Support">Necesito desarrollar un MVP</option>
+                            <option value="Scaling Support">Necesito escalar mi plataforma</option>
+                            <option value="Mobile App">Necesito una App Móvil</option>
+                            <option value="General Info">Solo quiero información</option>
                         </select>
                     </div>
-                    <button type="button"
+                    <button type="submit"
                         class="w-full bg-white text-black font-bold py-4 rounded hover:bg-oriaNeon transition-colors mt-2">
                         Solicitar contacto
                     </button>
+                    <!-- Mensaje de estado -->
+                    <p id="form-status" class="text-center text-sm mt-4 hidden"></p>
                 </form>
             </div>
         </div>
